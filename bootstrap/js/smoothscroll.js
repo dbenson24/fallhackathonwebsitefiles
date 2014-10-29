@@ -8,7 +8,7 @@ $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
 
    // animate
    $('html, body').animate({
-       scrollTop: $(this.hash).offset().top
+       scrollTop: $(this.hash).offset().top +100
      }, 700, function(){
 
        // when done, add hash to url
@@ -28,7 +28,7 @@ $("a.navbar-brand ul li a[href^='#']").on('click', function(e) {
 
    // animate
    $('html, body').animate({
-       scrollTop: $(this.hash).offset().top
+       scrollTop: $(this.hash).offset().top -50
      }, 700, function(){
 
        // when done, add hash to url
